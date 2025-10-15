@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+	<head>
     <title>War Reports</title>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+		<style>
+			body {
+				background-color: darkgreen;
+			}
+			container {
+				background-color: grey;
+				display: grid;
+			}
+		</style>
+	</head>
+  <header>
+    <div>
+      <h1>War Reports</h1>
+    </div>
+  </header>
   <body>
-    <h1>2025<br></h1>
-    <p>Faction (Tag) - dd/mm - [ Loss/Win ](link)</p>
-    <p>Cyber Warfare (CW) - 31/01 - </p><a href="https://torn-garden-family.github.io/TGFPages/WarReports/CW0131.html">[ Loss ]</a>
+    <div class="container">
+      <h2>2025<br></h2>
+			<br>
+			<table>
+				<tr>
+				  <th>Faction (Tag)</th>
+				  <th>Date (dd/mm)</th>
+				  <th>Loss/Win</th>
+				  <th>Report</th>
+				</tr>
+				<tr>
+					<td>Cyber Warfare (CW)</td>
+					<td>31/01</td>
+					<td>Loss</td>
+					<td>
+						<button>
+							<a href="https://torn-garden-family.github.io/TGFPages/WarReports/CW0131.html">Report</a>
+						</button>
+					</td>
+				</tr>
+			</table>
+    </div>
   </body>
 </html>
 
