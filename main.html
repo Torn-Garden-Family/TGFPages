@@ -1,1 +1,73 @@
-<content of WarReports/main.html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>War Reports</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+		<style>
+			body {
+				background-color: #456e4e;
+				color: white;
+				display: grid;
+				grid-template-columns: auto auto auto auto;
+				grid-template-rows: auto auto auto;
+			}
+			.container {
+				background-color: grey;
+                grid-column: 2 / span 2;
+				grid-row: 1 / span 3;
+			}
+			table, th, td {
+				border: 2px solid white;
+				border-collapse: collapse;
+				border-radius: 3px;
+				padding: 2px;
+			}
+			th, td, button {
+				background-color: #96D4D4;
+			}
+			button {
+				border: 0px;
+			}
+		</style>
+	</head>
+  <header>
+    <div>
+      <h1>War Reports</h1>
+    </div>
+  </header>
+  <body>
+    <div class="container">
+        <h2>2025<br></h2>
+		<br>
+		<table>
+			<tr>
+				<th>Faction (Tag)</th>
+				<th>Date (dd/mm)</th>
+				<th>Loss/Win</th>
+				<th>Report</th>
+			</tr>
+			<tr>
+				<td>Cyber Warfare (CW)</td>
+				<td>31/01</td>
+				<td>Loss</td>
+				<td>
+					<button>
+						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/CW0131.html">Report</a>
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>Black Lotus Society (BLS)</td>
+				<td>20/02</td>
+				<td>Loss</td>
+				<td>
+					<button>
+						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/BLS0220.html">Report</a>
+					</button>
+				</td>
+			</tr>
+		</table>
+    </div>
+  </body>
+</html>
