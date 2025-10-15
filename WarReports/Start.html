@@ -6,11 +6,22 @@
     <meta charset="UTF-8">
 		<style>
 			body {
-				background-color: darkgreen;
+				background-color: #456e4e;
 			}
-			container {
+			.container {
 				background-color: grey;
 				display: grid;
+				grid-template-columns: auto auto auto auto;
+			}
+			table, th, td {
+				border: 1px solid white;
+				border-collapse: collapse;
+			}
+            .table_box {
+                grid-column: 2 / span 2
+            }
+			th, td, button {
+				background-color: #96D4D4;
 			}
 		</style>
 	</head>
@@ -21,7 +32,8 @@
   </header>
   <body>
     <div class="container">
-      <h2>2025<br></h2>
+	  <div class="table_box">
+        <h2>2025<br></h2>
 			<br>
 			<table>
 				<tr>
@@ -41,6 +53,7 @@
 					</td>
 				</tr>
 			</table>
+		</div>
     </div>
   </body>
 </html>
