@@ -8,21 +8,19 @@
 			body {
 				background-color: #456e4e;
 				color: white;
-				display: grid;
-				grid-template-columns: auto auto auto auto;
-				grid-template-rows: auto auto auto auto;
+				display: block;
 			}
 			.container {
-				display: block;
 				background-color: lightgrey;
-                grid-column: 2 / span 2;
-				grid-row: 3 / span 2;
 				padding: 15px;
+				text-align: center;
+				horizontal-alignment: center;
 			}
 			table, th, td {
 				border: 3px solid white;
 				border-collapse: collapse;
 				padding: 15px;
+				horizontal-alignment: center;
 			}
 			th, td, button {
 				background-color: #96D4D4;
@@ -30,15 +28,6 @@
 			button {
 				border: 1px;
 				background-color: white;
-			}
-			header {
-				grid-row: 1;
-				grid-column: 1 / span 4;
-			}
-			nav {
-				display: block;
-				grid-row: 2;
-				grid-column: 1 / span 4;
 			}
 		</style>
 	</head>
@@ -48,11 +37,13 @@
     </div>
   </header>
   <body>
-	  <nav>
-		  <a href="/TGFPages/WarReports/">War Reports</a>
-	  </nav>
+	<menu>
+		<button>
+			
+		</button>
+	</menu>
     <div class="container">
-        <h2>2025<br></h2>
+        <h2>War Reports 2025<br></h2>
 		<br>
 		<table>
 			<tr>
@@ -82,6 +73,9 @@
 				</td>
 			</tr>
 		</table>
+	<iframe>
+		
+	</iframe>
     </div>
   </body>
 </html>
