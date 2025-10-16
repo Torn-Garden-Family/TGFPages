@@ -17,6 +17,7 @@
 				horizontal-alignment: center;
 			}
 			menu {
+				
 				background-color: white;
 				background-opacity: 30%;
 			}
@@ -31,12 +32,16 @@
 			}
 			button {
 				type: button;
-				border-left: 5px solid black;
-				border-right: 5px solid black;
+				border-left: 1px solid black;
 				background-color: white;
 			}
 			.report {
 				color: black;
+			}
+			.menuBtn {
+				border-left: 1px solid black;
+				border-right: 1px solid black;
+				padding: 5px;
 			}
 		</style>
 	</head>
@@ -47,7 +52,7 @@
   </header>
   <body>
 	<menu>
-		<button popovertarget="warReports">War Reports</button>
+		<button popovertarget="warReports" class="menuBtn">War Reports</button>
 		<button>2</button>
 	</menu>
     <div class="container" popover id="warReports">
@@ -66,7 +71,7 @@
 				<td>Loss</td>
 				<td>
 					<button>
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/CW0131.html" class="report">Report</a>
+						<a href="/CW0131.html" class="report" target="frame">View</a>
 					</button>
 				</td>
 			</tr>
@@ -76,12 +81,12 @@
 				<td>Loss</td>
 				<td>
 					<button>
-						<a href="https://torn-garden-family.github.io/TGFPages" class="report" target="frame">Report</a>
+						<a href="/BLS0220.html" class="report" target="frame">View</a>
 					</button>
 				</td>
 			</tr>
 		</table>
-	<iframe src="/WarReports/BLS0220.html" name="frame"></iframe>
+	<iframe src="https://torn-garden-family.github.io/TGFPages/WarReports" name="frame"></iframe>
     </div>
   </body>
 </html>
