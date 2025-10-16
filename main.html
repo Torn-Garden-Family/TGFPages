@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    <title>TGF</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-		<style>
+  <head>
+  <title>TGF</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+    <style>
 			body {
 				background-color: #456e4e;
-				color: white;
-				display: block;
 			}
 			menu {
-				height: 40px;
 				background-color: white;
-				margin-left: 40px;
 			}
 			.reportsContainer {
-				display: block;
 				background-color: lightgrey;
 				border: none;
 				padding: 15px;
 				text-align: center;
-				vertical-alignment: center;
-				margin-left: 40px;
-				height: 700px;
+				float: left;
 			}
 			table, th, td {
 				border: 1px solid white;
@@ -53,21 +46,17 @@
 			.menuBtn {
 				type: button;
 				background-color: white;
-				height: 25px;
 				font-size: 15px;
 				border-top: 0px;
 				border-bottom: 0px;
 				border-left: 1px solid black;
 				border-right: 1px solid black;
 				border-collapse: collapse;
-				margin-left: 10px;
 				padding: 5px;
 			}
 			.frameContainer {
 				background-color: lightgrey;
-				width: 1000px;
-				height: 700px;
-				margin-left: 600px;
+				float: right;
 			}
 			iframe {
 				border: none;
@@ -82,11 +71,13 @@
     </div>
   </header>
   <body>
-	<menu>
+	<nav>
+	  <menu>
 		<button popovertarget="warReports" class="menuBtn">War Reports</button>
-	</menu>
-	<br>
-    <div class="reportsContainer" popover id="warReports">
+	  </menu>
+	</nav>
+	<div>
+	<aside class="reportsContainer" popover id="warReports">
         <h2>War Reports 2025</h2>
 		<br>
 		<table>
@@ -194,9 +185,10 @@
 				</button></td>
 			</tr>
 		</table>
-    </div>
-	<div class="frameContainer">
+	</aside>
+	<section class="frameContainer">
 	  <iframe name="frame"></iframe>
+	</section>
 	</div>
   </body>
 </html>
