@@ -16,6 +16,10 @@
 				text-align: center;
 				horizontal-alignment: center;
 			}
+			menu {
+				background-color: white;
+				background-opacity: 30%;
+			}
 			table, th, td {
 				border: 3px solid white;
 				border-collapse: collapse;
@@ -26,8 +30,13 @@
 				background-color: #96D4D4;
 			}
 			button {
+				type: toggle;
 				border: 1px;
 				background-color: white;
+			}
+			.report {
+				target: _blank;
+				color: black;
 			}
 		</style>
 	</head>
@@ -38,12 +47,11 @@
   </header>
   <body>
 	<menu>
-		<button>
-			
-		</button>
+		<button popovertarget="warReports">War Reports</button>
+		<button>2</button>
 	</menu>
-    <div class="container">
-        <h2>War Reports 2025<br></h2>
+    <div class="container" popover id="warReports">
+        <h2>War Reports 2025</h2>
 		<br>
 		<table>
 			<tr>
@@ -58,7 +66,7 @@
 				<td>Loss</td>
 				<td>
 					<button>
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/CW0131.html">Report</a>
+						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/CW0131.html" class="report">Report</a>
 					</button>
 				</td>
 			</tr>
@@ -68,7 +76,7 @@
 				<td>Loss</td>
 				<td>
 					<button>
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/BLS0220.html">Report</a>
+						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/BLS0220.html" class="report">Report</a>
 					</button>
 				</td>
 			</tr>
