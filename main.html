@@ -1,86 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-  <title>TGF</title>
+<head>
+  <title>Torn Garden Family</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-    <style>
-			body {
-				background-color: #456e4e;
-			}
-			menu {
-				background-color: white;
-			}
-			.reportsContainer {
-				background-color: lightgrey;
-				border: none;
-				padding: 15px;
-				text-align: center;
-				float: left;
-			}
-			table, th, td {
-				border: 1px solid white;
-				border-collapse: collapse;
-				padding-left: 15px;
-				padding-right: 15px;
-				padding-top: 5px;
-				padding-bottom: 5px;
-				horizontal-alignment: center;
-			}
-			th, td, .reportsBtn {
-				background-color: #96D4D4;
-			}
-			.reportsBtn {
-				border: none;
-				type: button;
-				padding: 10px;
-				width: inherit;
-				height: inherit;
-			}
-			.report {
-				color: black;
-				width: inherit;
-				height: inherit;
-				font-size: 15px;
-			}
-			.menuBtn {
-				type: button;
-				background-color: white;
-				font-size: 15px;
-				border-top: 0px;
-				border-bottom: 0px;
-				border-left: 1px solid black;
-				border-right: 1px solid black;
-				border-collapse: collapse;
-				padding: 5px;
-			}
-			.frameContainer {
-				background-color: lightgrey;
-				float: right;
-			}
-			iframe {
-				border: none;
-				width: inherit;
-				height: inherit;
-			}
-		</style>
-	</head>
-  <header>
-    <div>
-      <h1>TGF Assets</h1>
-    </div>
-  </header>
-  <body>
-	<nav>
-	  <menu>
-		<button popovertarget="warReports" class="menuBtn">War Reports</button>
-	  </menu>
+  <base href="https://torn-garden-family.github.io/TGFPages/">
+	<style>
+		body {
+			background-color: darkgreen;
+		}
+		.topContainer {
+			border: 1px solid yellow;
+		}
+		header {
+			color: white;
+		}
+		.navMenu {
+			background-color: white;
+			color: black;
+			font-size: 10px;
+			border-top: 1px solid white;
+			border-bottom: 1px solid white;
+		}
+		.menuBtn {
+			border-top: none;
+			border-bottom: none;
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+
+			border-collapse: collapse;
+		}
+		.repMainContainer {
+			background-color: darkgrey;
+			display: flex;
+		}
+		.repTableContainer {
+			background-color: lightgrey;
+			width: 33%;
+		}
+		table {
+			background-color: cyan;
+			border: 1px solid white;
+			padding: 3px;
+		}
+		.repBtn {
+			background-color: cyan;
+			color: black;
+
+			border: none;
+			padding: 2px;
+		}
+		.repFrameContainer {
+			background-color: lightgrey;
+
+			padding: 2px;
+		}
+	</style>
+</head>
+<body>
+	<div class="topContainer">
+	<header>
+		<div>
+			<h1>TGF Assets</h1>
+		</div>
+	</header>
+	<nav class="navMenu">
+		<menu>
+			<button popovertarget="warRep" class="menuBtn">War Reports</button>
+		</menu>
 	</nav>
-	<div>
-	<aside class="reportsContainer" popover id="warReports">
-        <h2>War Reports 2025</h2>
-		<br>
-		<table>
+	</div>
+	<div class="repMainContainer" popover id="warRep">
+		<div class="repTableContainer">
+				<h2>War Reports 2025</h2>
+				<br>
+				<table>
 			<tr>
 				<th>Faction (Tag)</th>
 				<th>Date (dd/mm)</th>
@@ -89,106 +82,133 @@
 			<tr>
 				<td>Crimson Tech (CTEC)</td>
 				<td>04/10</td>
-				<td><button class="reportsBtn">
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/CTEC0410.html" class="report" target="frame">View</a>
-				</button></td>
+				<td>
+				<button class="repBtn">
+					<a href="WarReports/CTEC0410.html" target="repFrame">View</a>
+				</button>
+				</td>
 			</tr>
 			<tr>
 				<td>The Mad Order (TMO)</td>
 				<td>13/09</td>
-				<td><button class="reportsBtn">
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/TMO1309.html" class="report" target="frame">View</a>
-				</button></td>
+				<td>
+				<button class="repBtn">
+					<a href="WarReports/TMO1309.html" target="repFrame">View</a>
+				</button>
+				</td>
 			</tr>
 			<tr>
 				<td>Die Blade (DB)</td>
 				<td>23/08</td>
-				<td><button class="reportsBtn">
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/DB2308.html" class="report" target="frame">View</a>
-				</button></td>
+				<td>
+				<button class="repBtn">
+					<a href="WarReports/DB2308.html" target="repFrame">View</a>
+				</button>
+				</td>
 			</tr>
 			<tr>
 				<td>Minervan Vanguard (MV)</td>
 				<td>02/08</td>
-				<td><button class="reportsBtn">
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/MV0802.html" class="report" target="frame">View</a>
-				</button></td>
+				<td>
+				<button class="repBtn">
+					<a href="WarReports/MV0802.html" target="repFrame">View</a>
+				</button>
+				</td>
 			</tr>
 			<tr>
 				<td>TSFTS Microbrewery (BEER)</td>
 				<td>10/07</td>
-				<td><button class="reportsBtn">
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/BEER0710.html" class="report" target="frame">View</a>
-				</button></td>
+				<td>
+				<button class="repBtn">
+					<a href="WarReports/BEER0710.html" target="repFrame">View</a>
+				</button>
+				</td>
 			</tr>
 			<tr>
 				<td>Trash Bandits (TB)</td>
 				<td>20/06</td>
-				<td><button class="reportsBtn">
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/TB0620.html" class="report" target="frame">View</a>
-				</button></td>
+				<td>
+				<button class="repBtn">
+					<a href="WarReports/TB0620.html" target="repFrame">View</a>
+				</button>
+				</td>
 			</tr>
 			<tr>
 				<td>Heathen Saints (HS)</td>
 				<td>07/06</td>
-				<td><button class="reportsBtn">
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/HS0607.html" class="report" target="frame">View</a>
-				</button></td>
+				<td>
+				<button class="repBtn">
+					<a href="WarReports/HS0607.html" target="repFrame">View</a>
+				</button>
+				</td>
 			</tr>
 			<tr>
 				<td>Organised Chaos (OC)</td>
 				<td>24/05</td>
-				<td><button class="reportsBtn">
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/OC0524.html" class="report" target="frame">View</a>
-				</button></td>
+				<td>
+				<button class="repBtn">
+					<a href="WarReports/OC0524.html" target="repFrame">View</a>
+				</button>
+				</td>
 			</tr>
 			<tr>
 				<td>Frogs of Fortune (GoA)</td>
 				<td>26/04</td>
-				<td><button class="reportsBtn">
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/GOA0426.html" class="report" target="frame">View</a>
-				</button></td>
+				<td>
+				<button class="repBtn">
+					<a href="WarReports/GOA0426.html" target="repFrame">View</a>
+				</button>
+				</td>
 			</tr>
 			<tr>
 				<td>Veloce (Veloce)</td>
 				<td>05/04</td>
-				<td><button class="reportsBtn">
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/Veloce0405.html" class="report" target="frame">View</a>
-				</button></td>
+				<td>
+				<button class="repBtn">
+					<a href="WarReports/Veloce0405.html" target="repFrame">View</a>
+				</button>
+				</td>
 			</tr>
 			<tr>
 				<td>DJ-BIRDS OF PASSAGE (DJ)</td>
 				<td>22/03</td>
-				<td><button class="reportsBtn">
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/DJ0322.html" class="report" target="frame">View</a>
-				</button></td>
+				<td>
+				<button class="repBtn">
+					<a href="WarReports/DJ0322.html" target="repFrame">View</a>
+				</button>
+				</td>
 			</tr>
 			<tr>
 				<td>Voidbringers (Void)</td>
 				<td>08/03</td>
-				<td><button class="reportsBtn">
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/Void0308.html" class="report" target="frame">View</a>
-				</button></td>
+				<td>
+				<button class="repBtn">
+					<a href="WarReports/Void0308.html" target="repFrame">View</a>
+				</button>
+				</td>
 			</tr>
 			<tr>
 				<td>Black Lotus Society (BLS)</td>
 				<td>20/02</td>
-				<td><button class="reportsBtn">
-						<a href="https://torn-garden-family.github.io/TGFPages/WarReports/BLS0220.html" class="report" target="frame">View</a>
-				</button></td>
+				<td>
+				<button class="repBtn">
+					<a href="WarReports/BLS0220.html" target="frame">View</a>
+				</button>
+				</td>
 			</tr>
 			<tr>
 				<td>Cyber Warfare (CW)</td>
 				<td>31/01</td>
-				<td><button class="reportsBtn">
-					<a href="https://torn-garden-family.github.io/TGFPages/WarReports/CW0131.html" class="report" target="frame">View</a>
-				</button></td>
+				<td>
+				<button class="repBtn">
+					<a href="WarReports/CW0131.html" target="repFrame">View</a>
+				</button>
+				</td>
 			</tr>
-		</table>
-	</aside>
-	<section class="frameContainer">
-	  <iframe name="frame"></iframe>
-	</section>
+				</table>
+		</div>
+		<div class="repFrameContainer">
+			<iframe name="repFrame" title="War Reports Frame"></iframe>
+		</div>
 	</div>
-  </body>
-</html>
+</body>
