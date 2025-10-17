@@ -8,10 +8,11 @@
 		body {
 			background-color: darkgreen;
 		}
-		.topContainer {
-			border: 1px solid yellow;
+		.mainContainer {
+			display: block;
 		}
-		header {
+		.topContainer header {
+			border: 1px solid yellow;
 			color: white;
 		}
 		.navMenu {
@@ -30,14 +31,17 @@
 			border-collapse: collapse;
 		}
 		.repMainContainer {
+			display: block;
+			
 			background-color: darkgrey;
-			display: flex;
 		}
 		.repTableContainer {
+			display: inline;
+			
 			background-color: lightgrey;
 			width: 33%;
 		}
-		table {
+		table th td {
 			background-color: cyan;
 			border: 1px solid white;
 			padding: 3px;
@@ -50,13 +54,20 @@
 			padding: 2px;
 		}
 		.repFrameContainer {
+			display: inline;
+			
 			background-color: lightgrey;
 
 			padding: 2px;
 		}
+		iframe {
+			width: inherit;
+			height: inherit;
+		}
 	</style>
 </head>
 <body>
+	<div class="mainContainer">
 	<div class="topContainer">
 	<header>
 		<div>
@@ -210,5 +221,6 @@
 		<div class="repFrameContainer">
 			<iframe name="repFrame" title="War Reports Frame"></iframe>
 		</div>
+	</div>
 	</div>
 </body>
