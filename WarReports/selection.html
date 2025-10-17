@@ -2,21 +2,45 @@
 <html lang="en">
   <head>
 	<title>TGF War Reports</title>
-    <meta>
-    <meta>
-	<base>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <base href="https://torn-garden-family.github.io/TGFPages/">
     <style>
 		body {
-			
+			background-color: grey;
 		}
 		header {
-			
+			border: 1px solid powderblue;
 		}
 		nav {
-			
+			background-color: powderblue;
 		}
 		nav > button {
-			
+			background-color: white;
+			border: none;
+			cursor: pointer;
+		}
+		nav > button:hover {
+			background-color: cyan;
+		}
+		.mainC {
+			display: block;
+		}
+		.mainC > div {
+			display: flex;
+			justify-content: space-between;
+		}
+		.repTableC {
+			background-color: powderblue;
+			padding: 10px;
+		}
+		table th td {
+			background-color: inherit;
+			border: 1px solid white;
+			padding: 3px;
+		}
+		.frameC {
+			background-color: inherit;
 		}
     </style>
   </head>
@@ -28,7 +52,7 @@
       <button><a href="main.html">Back</a></button>
     </nav>
     <div class="mainC">
-		  <div class="repTableContainer">
+		  <div class="repTableC">
 				<h2>War Reports 2025</h2>
 				<br>
 				<table>
@@ -165,7 +189,7 @@
 			</tr>
 				</table>
 		</div>
-		<div class="repFrameContainer">
+		<div class="frameC">
 			<iframe name="repFrame" title="War Reports Frame"></iframe>
 		</div>
     </div>
