@@ -10,8 +10,8 @@
 			background-color: lightgrey;
 		}
 		header {
-			background-color: powderblue;
-			border: 1px solid tomato;
+			background-color: sandybrown;
+			border: 1px solid lightsalmon;
 		}
 		nav {
 			background-color: mediumaquamarine;
@@ -43,20 +43,24 @@
 		table, th, td {
 			background-color: inherit;
 			text-align: left;
-			padding: 3px;
 		}
 		table {
 			border: 1px solid white;
 		}
 		th, td {
 			border-bottom: 1px solid white;
+			padding: 3px;
 			padding-right: 5px;
 		}
 		th:nth-child(odd), td:nth-child(odd) {
 			background-color: lightcyan;
 		}
+		td:has(button) {
+			padding: 0px;
+		}
 		.repBtn {
 			background-color: inherit;
+			border: none;
 			color: inherit;
 			height: inherit;
 			width: inherit;
@@ -65,8 +69,9 @@
 			background-color: white;
 		}
 		.frameC {
-			background-color: darkslateblue;
-			width: 67%;
+			background-color: darkseagreen;
+			width: 80%;
+			height: 100%;
 		}
 		.frameC > iframe {
 			width: 100%;
