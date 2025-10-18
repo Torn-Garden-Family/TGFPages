@@ -7,24 +7,27 @@
     <base href="https://torn-garden-family.github.io/TGFPages/">
     <style>
 		body {
-			background-color: grey;
+			background-color: lightgrey;
 		}
 		header {
-			background-color: mediumaquamarine;
+			background-color: powderblue;
 			border: 1px solid tomato;
 		}
 		nav {
 			background-color: mediumaquamarine;
 		}
 		nav > button {
-			background-color: white;
+			background-color: inherit;
+			height: inherit;
 			border: none;
 			cursor: pointer;
+			font-size: 8px;
 		}
 		nav > button:hover {
-			background-color: cyan;
+			background-color: lightcyan;
 		}
 		.mainC {
+			background-color: mediumaquamarine;
 			display: flex;
 		}
 		.mainC > div {
@@ -34,14 +37,33 @@
 			background-color: powderblue;
 			padding: 10px;
 		}
-		table th td {
+		table, th, td {
 			background-color: inherit;
-			border: 1px solid white;
 			text-align: left;
 			padding: 3px;
 		}
+		table {
+			border: 1px solid white;
+		}
+		th, td {
+			border-bottom: 1px solid white;
+			padding-right: 5px;
+		}
+		th:nth-child(odd), td:nth-child(odd) {
+			background-color: lightcyan;
+		}
+		.repBtn {
+			background-color: inherit;
+			color: inherit;
+			height: inherit;
+			width: inherit;
+		}
+		.repBtn:hover {
+			background-color: lightcyan;
+		}
 		.frameC {
 			background-color: inherit;
+			width: 67%;
 		}
     </style>
   </head>
