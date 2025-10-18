@@ -10,10 +10,11 @@
 			background-color: grey;
 		}
 		header {
-			border: 1px solid powderblue;
+			background-color: mediumaquamarine;
+			border: 1px solid tomato;
 		}
 		nav {
-			background-color: powderblue;
+			background-color: mediumaquamarine;
 		}
 		nav > button {
 			background-color: white;
@@ -24,10 +25,9 @@
 			background-color: cyan;
 		}
 		.mainC {
-			display: block;
+			display: flex;
 		}
 		.mainC > div {
-			display: flex;
 			justify-content: space-between;
 		}
 		.repTableC {
@@ -37,6 +37,7 @@
 		table th td {
 			background-color: inherit;
 			border: 1px solid white;
+			text-align: left;
 			padding: 3px;
 		}
 		.frameC {
@@ -46,16 +47,16 @@
   </head>
   <body>
     <header>
-      
+      <h2>War Reports</h2>
     </header>
     <nav>
       <button><a href="main.html">Back</a></button>
     </nav>
     <div class="mainC">
-		  <div class="repTableC">
-				<h2>War Reports 2025</h2>
-				<br>
-				<table>
+	  <span class="repTableC">
+		<h2>2025</h2>
+		<br>
+		<table>
 			<tr>
 				<th>Faction (Tag)</th>
 				<th>Date (dd/mm)</th>
@@ -188,10 +189,10 @@
 				</td>
 			</tr>
 				</table>
-		</div>
-		<div class="frameC">
+		</span>
+		<span class="frameC">
 			<iframe name="repFrame" title="War Reports Frame"></iframe>
-		</div>
+		</span>
     </div>
   </body>
 </html>
