@@ -45,10 +45,10 @@
 			text-align: left;
 		}
 		table {
-			border: 1px solid white;
+			border: 2px solid white;
 		}
 		th, td {
-			border-bottom: 1px solid white;
+			border-bottom: 2px solid white;
 			padding: 3px;
 			padding-right: 5px;
 		}
@@ -56,14 +56,14 @@
 			background-color: lightcyan;
 		}
 		td:has(button) {
-			padding: 0px;
+			padding-right: 3px;
 		}
 		.repBtn {
 			background-color: inherit;
 			border: none;
 			color: inherit;
-			height: inherit;
-			width: inherit;
+			height: 100%;
+			width: 100%;
 		}
 		.repBtn:hover {
 			background-color: white;
@@ -71,10 +71,10 @@
 		.frameC {
 			background-color: darkseagreen;
 			width: 80%;
-			height: 100%;
+			height: auto;
 		}
-		.frameC > iframe {
-			width: 100%;
+		iframe {
+			width: 98%;
 			height: 100%;
 		}
     </style>
@@ -209,7 +209,7 @@
 				<td>20/02</td>
 				<td>
 				<button class="repBtn">
-					<a href="WarReports/BLS0220.html" target="frame">View</a>
+					<a href="WarReports/BLS0220.html" target="repFrame">View</a>
 				</button>
 				</td>
 			</tr>
