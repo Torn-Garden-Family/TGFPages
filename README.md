@@ -1,3 +1,1 @@
-# Redirecting...
-
-Taking too long? [Click here]("http://torn-community-garden/pages/main.html")
+[Click here](http://torn-community-garden/pages/main.html) to enter home page.
