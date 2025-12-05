@@ -1,1 +1,1 @@
-[Click here](http://torn-community-garden/pages/main.html) to enter home page.
+[Click here](http://torn-community-garden.github.io/pages/main.html) to enter home page.
