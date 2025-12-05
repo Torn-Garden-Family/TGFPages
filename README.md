@@ -1,1 +1,3 @@
-# TGFPages
+# Redirecting...
+
+Taking too long? [Click here]("http://torn-community-garden/pages/main.html")
